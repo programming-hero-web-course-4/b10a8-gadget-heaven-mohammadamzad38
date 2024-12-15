@@ -1,0 +1,808 @@
+[
+    {
+      "product_id": "1",
+      "product_title": "iPhone 14 Pro Max",
+      "product_image": "https://example.com/images/iphone14promax.jpg",
+      "category": "iPhone",
+      "price": 1199,
+      "description": "The iPhone 14 Pro Max is Apple's latest flagship device with advanced features and performance.",
+      "specification": {
+        "Screen Size": "6.7 inches",
+        "Processor": "A16 Bionic",
+        "Storage": "128GB/256GB/512GB/1TB",
+        "Camera": "48 MP Triple-lens system",
+        "Battery Life": "28 hours"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "2",
+      "product_title": "MacBook Pro 16-inch",
+      "product_image": "https://example.com/images/macbookpro16.jpg",
+      "category": "MacBook",
+      "price": 2499,
+      "description": "The ultimate MacBook Pro with M2 Max chip for unparalleled performance and creativity.",
+      "specification": {
+        "Screen Size": "16 inches",
+        "Processor": "M2 Max",
+        "Storage": "512GB/1TB/2TB/4TB",
+        "RAM": "16GB/32GB/64GB",
+        "Battery Life": "21 hours"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "3",
+      "product_title": "Samsung Galaxy Watch 5",
+      "product_image": "https://example.com/images/galaxywatch5.jpg",
+      "category": "Smart Watch",
+      "price": 299,
+      "description": "Advanced health and fitness tracking with Samsung's Galaxy Watch 5.",
+      "specification": {
+        "Display": "1.4 inches AMOLED",
+        "Battery Life": "40 hours",
+        "Features": "Heart Rate Monitor, GPS, Sleep Tracking",
+        "Compatibility": "Android & iOS"
+      },
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "4",
+      "product_title": "Dell XPS 13 Plus",
+      "product_image": "https://example.com/images/dellxps13plus.jpg",
+      "category": "Laptop",
+      "price": 1599,
+      "description": "Sleek and powerful laptop designed for productivity and entertainment.",
+      "specification": {
+        "Screen Size": "13.4 inches",
+        "Processor": "Intel Core i7",
+        "Storage": "512GB/1TB",
+        "RAM": "16GB",
+        "Battery Life": "12 hours"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "5",
+      "product_title": "AirPods Pro 2nd Gen",
+      "product_image": "https://example.com/images/airpodspro2.jpg",
+      "category": "Accessories",
+      "price": 249,
+      "description": "Experience immersive sound with noise cancellation and spatial audio.",
+      "specification": {
+        "Battery Life": "6 hours per charge",
+        "Features": "Active Noise Cancellation, Spatial Audio, MagSafe Charging",
+        "Compatibility": "iOS & macOS"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "6",
+      "product_title": "HP Spectre x360 Convertible",
+      "product_image": "https://example.com/images/hpspectrex360.jpg",
+      "category": "Laptop",
+      "price": 1399,
+      "description": "Convertible laptop for versatility and performance.",
+      "specification": {
+        "Screen Size": "13.5 inches",
+        "Processor": "Intel Core i7",
+        "Storage": "512GB",
+        "RAM": "16GB",
+        "Battery Life": "14 hours"
+      },
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "7",
+      "product_title": "Apple Watch Series 8",
+      "product_image": "https://example.com/images/applewatchseries8.jpg",
+      "category": "Smart Watch",
+      "price": 399,
+      "description": "A smartwatch designed for health, fitness, and connectivity.",
+      "specification": {
+        "Display": "1.9 inches Retina",
+        "Battery Life": "18 hours",
+        "Features": "ECG, Blood Oxygen Monitor, Sleep Tracking",
+        "Compatibility": "iOS"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "8",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://example.com/images/thinkpadx1carbon.jpg",
+      "category": "Laptop",
+      "price": 1799,
+      "description": "Business-class laptop with powerful performance and premium build quality.",
+      "specification": {
+        "Screen Size": "14 inches",
+        "Processor": "Intel Core i7",
+        "Storage": "1TB",
+        "RAM": "16GB",
+        "Battery Life": "15 hours"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "9",
+      "product_title": "Sony WH-1000XM5",
+      "product_image": "https://example.com/images/sonywh1000xm5.jpg",
+      "category": "Accessories",
+      "price": 399,
+      "description": "Industry-leading noise-canceling headphones with superior sound quality.",
+      "specification": {
+        "Battery Life": "30 hours",
+        "Features": "Noise Cancellation, Touch Controls, Voice Assistant",
+        "Compatibility": "Bluetooth"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "10",
+      "product_title": "Google Pixel 7 Pro",
+      "product_image": "https://example.com/images/pixel7pro.jpg",
+      "category": "Phones",
+      "price": 899,
+      "description": "The latest Pixel phone with advanced AI capabilities and top-notch camera performance.",
+      "specification": {
+        "Screen Size": "6.7 inches",
+        "Processor": "Google Tensor G2",
+        "Storage": "128GB/256GB/512GB",
+        "Camera": "50 MP Triple-lens system",
+        "Battery Life": "24 hours"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "11",
+      "product_title": "Apple MacBook Air M2",
+      "product_image": "https://example.com/images/macbookairm2.jpg",
+      "category": "MacBook",
+      "price": 1199,
+      "description": "Light and powerful laptop with Apple's M2 chip for speed and efficiency.",
+      "specification": {
+        "Screen Size": "13.6 inches",
+        "Processor": "M2",
+        "Storage": "256GB/512GB/1TB",
+        "RAM": "8GB/16GB",
+        "Battery Life": "18 hours"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "12",
+      "product_title": "Samsung Galaxy S23 Ultra",
+      "product_image": "https://example.com/images/galaxys23ultra.jpg",
+      "category": "Phone",
+      "price": 1199,
+      "description": "The latest Samsung phone with a powerful camera and fast performance.",
+      "specification": {
+        "Screen Size": "6.8 inches",
+        "Processor": "Snapdragon 8 Gen 2",
+        "Storage": "256GB/512GB",
+        "Camera": "200 MP Quad-lens system",
+        "Battery Life": "22 hours"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "13",
+      "product_title": "Microsoft Surface Laptop 5",
+      "product_image": "https://example.com/images/surfacelaptop5.jpg",
+      "category": "Laptop",
+      "price": 1499,
+      "description": "A sleek laptop designed for work and creativity with the latest Intel processors.",
+      "specification": {
+        "Screen Size": "13.5 inches",
+        "Processor": "Intel Core i7",
+        "Storage": "512GB/1TB",
+        "RAM": "8GB/16GB",
+        "Battery Life": "17 hours"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "14",
+      "product_title": "Sony PlayStation 5",
+      "product_image": "https://example.com/images/ps5.jpg",
+      "category": "Gaming Console",
+      "price": 499,
+      "description": "Next-gen gaming console with lightning-fast load times and incredible graphics.",
+      "specification": {
+        "Storage": "825GB SSD",
+        "RAM": "16GB",
+        "Features": "4K Gaming, Ultra HD Blu-ray",
+        "Compatibility": "PS5 Games"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "15",
+      "product_title": "Oculus Quest 2",
+      "product_image": "https://example.com/images/oculusquest2.jpg",
+      "category": "Virtual Reality",
+      "price": 299,
+      "description": "The most advanced standalone VR headset for gaming and entertainment.",
+      "specification": {
+        "Display": "1832 x 1920 pixels per eye",
+        "Battery Life": "2-3 hours",
+        "Features": "Wireless VR, 3D Audio",
+        "Compatibility": "VR Games"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "16",
+      "product_title": "Bose QuietComfort 45",
+      "product_image": "https://example.com/images/boseqcomfort45.jpg",
+      "category": "Accessories",
+      "price": 329,
+      "description": "Premium noise-canceling headphones with superior sound quality.",
+      "specification": {
+        "Battery Life": "24 hours",
+        "Features": "Noise Cancellation, Comfortable Fit, Voice Assistant",
+        "Compatibility": "Bluetooth"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "17",
+      "product_title": "Razer Blade 15",
+      "product_image": "https://example.com/images/razerblade15.jpg",
+      "category": "Laptop",
+      "price": 1899,
+      "description": "High-performance gaming laptop with an ultra-fast display and powerful GPU.",
+      "specification": {
+        "Screen Size": "15.6 inches",
+        "Processor": "Intel Core i7",
+        "Storage": "512GB/1TB",
+        "RAM": "16GB/32GB",
+        "Battery Life": "11 hours"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "18",
+      "product_title": "Bose SoundLink Revolve+",
+      "product_image": "https://example.com/images/bosesoundlink.jpg",
+      "category": "Accessories",
+      "price": 299,
+      "description": "Portable Bluetooth speaker with 360-degree sound and deep bass.",
+      "specification": {
+        "Battery Life": "16 hours",
+        "Features": "360-degree Sound, Water-resistant",
+        "Compatibility": "Bluetooth"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "19",
+      "product_title": "LG 27-inch 4K Monitor",
+      "product_image": "https://example.com/images/lg27inch4k.jpg",
+      "category": "Accessories",
+      "price": 599,
+      "description": "Ultra-high definition 4K monitor for professional work and entertainment.",
+      "specification": {
+        "Display": "27 inches",
+        "Resolution": "3840 x 2160",
+        "Ports": "HDMI, DisplayPort",
+        "Features": "HDR, IPS"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "20",
+      "product_title": "Apple TV 4K",
+      "product_image": "https://example.com/images/appletv4k.jpg",
+      "category": "Accessories",
+      "price": 179,
+      "description": "The best streaming experience with 4K HDR support and Apple’s TVOS.",
+      "specification": {
+        "Storage": "32GB/64GB",
+        "Resolution": "4K HDR",
+        "Features": "Siri Remote, AirPlay",
+        "Compatibility": "Apple Devices"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "21",
+      "product_title": "Nintendo Switch OLED",
+      "product_image": "https://example.com/images/nintendoswitcholed.jpg",
+      "category": "Gaming Console",
+      "price": 349,
+      "description": "Hybrid gaming console that transforms between handheld and TV mode.",
+      "specification": {
+        "Screen Size": "7 inches OLED",
+        "Storage": "64GB",
+        "Features": "Wireless Controller, Motion Control",
+        "Compatibility": "Switch Games"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "22",
+      "product_title": "JBL Charge 5",
+      "product_image": "https://example.com/images/jblcharge5.jpg",
+      "category": "Accessories",
+      "price": 179,
+      "description": "Portable Bluetooth speaker with powerful bass and waterproof design.",
+      "specification": {
+        "Battery Life": "20 hours",
+        "Features": "Bass Radiators, Waterproof",
+        "Compatibility": "Bluetooth"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "23",
+      "product_title": "Canon EOS R6",
+      "product_image": "https://example.com/images/canoneosr6.jpg",
+      "category": "Camera",
+      "price": 2499,
+      "description": "Full-frame mirrorless camera with superior image quality and speed.",
+      "specification": {
+        "Resolution": "20.1 MP",
+        "Video": "4K UHD",
+        "ISO Range": "100-102400",
+        "Features": "Dual Pixel AF, In-Body Stabilization"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "24",
+      "product_title": "GoPro HERO 10 Black",
+      "product_image": "https://example.com/images/goprohero10.jpg",
+      "category": "Camera",
+      "price": 399,
+      "description": "Action camera designed for high-definition video recording in extreme conditions.",
+      "specification": {
+        "Resolution": "5.3K Video",
+        "Battery Life": "2.5 hours",
+        "Features": "Waterproof, Stabilization"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "25",
+      "product_title": "Dyson V15 Detect",
+      "product_image": "https://example.com/images/dysonv15.jpg",
+      "category": "Home Appliances",
+      "price": 699,
+      "description": "Advanced cordless vacuum cleaner with laser illumination for deep cleaning.",
+      "specification": {
+        "Battery Life": "60 minutes",
+        "Features": "Laser Illumination, Powerful Suction"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "26",
+      "product_title": "Samsung 75-inch QLED TV",
+      "product_image": "https://example.com/images/samsung75qled.jpg",
+      "category": "Home Entertainment",
+      "price": 1799,
+      "description": "Premium 75-inch QLED TV with stunning color accuracy and 4K resolution.",
+      "specification": {
+        "Resolution": "4K UHD",
+        "Size": "75 inches",
+        "Features": "HDR, Smart TV"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "27",
+      "product_title": "LG NanoCell 65-inch TV",
+      "product_image": "https://example.com/images/lg65nano.jpg",
+      "category": "Home Entertainment",
+      "price": 1299,
+      "description": "55-inch LED TV with NanoCell technology for enhanced color and contrast.",
+      "specification": {
+        "Resolution": "4K UHD",
+        "Size": "65 inches",
+        "Features": "AI ThinQ, WebOS"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "28",
+      "product_title": "Fitbit Charge 5",
+      "product_image": "https://example.com/images/fitbitcharge5.jpg",
+      "category": "Smart Watch",
+      "price": 149,
+      "description": "Advanced fitness tracker with built-in GPS and heart rate monitoring.",
+      "specification": {
+        "Display": "1.04 inches AMOLED",
+        "Battery Life": "7 days",
+        "Features": "GPS, Heart Rate Monitor, Sleep Tracking",
+        "Compatibility": "Android & iOS"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "29",
+      "product_title": "Huawei MateBook X Pro",
+      "product_image": "https://example.com/images/huaweimatebookx.jpg",
+      "category": "Laptop",
+      "price": 1699,
+      "description": "Sleek, high-performance laptop with 3K touch display and premium build.",
+      "specification": {
+        "Screen Size": "13.9 inches",
+        "Processor": "Intel Core i7",
+        "Storage": "512GB",
+        "RAM": "16GB",
+        "Battery Life": "12 hours"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "30",
+      "product_title": "Apple iPad Pro 12.9-inch",
+      "product_image": "https://example.com/images/ipadpro12.jpg",
+      "category": "Tablet",
+      "price": 1099,
+      "description": "Powerful tablet with Apple's M1 chip, perfect for work and entertainment.",
+      "specification": {
+        "Screen Size": "12.9 inches",
+        "Processor": "M1",
+        "Storage": "128GB/256GB/512GB",
+        "Battery Life": "10 hours"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    
+        {
+          "product_id": "31",
+          "product_title": "iPhone 14 Pro Max",
+          "product_image": "https://example.com/images/iphone14promax.jpg",
+          "category": "iPhone",
+          "price": 1199,
+          "description": "The iPhone 14 Pro Max is Apple's latest flagship device with advanced features and performance.",
+          "specification": {
+            "Screen Size": "6.7 inches",
+            "Processor": "A16 Bionic",
+            "Storage": "128GB/256GB/512GB/1TB",
+            "Camera": "48 MP Triple-lens system",
+            "Battery Life": "28 hours"
+          },
+          "availability": true,
+          "rating": 4.8
+        },
+        {
+          "product_id": "32",
+          "product_title": "MacBook Pro 16-inch",
+          "product_image": "https://example.com/images/macbookpro16.jpg",
+          "category": "MacBook",
+          "price": 2499,
+          "description": "The ultimate MacBook Pro with M2 Max chip for unparalleled performance and creativity.",
+          "specification": {
+            "Screen Size": "16 inches",
+            "Processor": "M2 Max",
+            "Storage": "512GB/1TB/2TB/4TB",
+            "RAM": "16GB/32GB/64GB",
+            "Battery Life": "21 hours"
+          },
+          "availability": true,
+          "rating": 4.9
+        },
+        {
+          "product_id": "33",
+          "product_title": "Samsung Galaxy Watch 5",
+          "product_image": "https://example.com/images/galaxywatch5.jpg",
+          "category": "Smart Watch",
+          "price": 299,
+          "description": "Advanced health and fitness tracking with Samsung's Galaxy Watch 5.",
+          "specification": {
+            "Display": "1.4 inches AMOLED",
+            "Battery Life": "40 hours",
+            "Features": "Heart Rate Monitor, GPS, Sleep Tracking",
+            "Compatibility": "Android & iOS"
+          },
+          "availability": true,
+          "rating": 4.5
+        },
+        {
+          "product_id": "34",
+          "product_title": "Dell XPS 13 Plus",
+          "product_image": "https://example.com/images/dellxps13plus.jpg",
+          "category": "Laptop",
+          "price": 1599,
+          "description": "Sleek and powerful laptop designed for productivity and entertainment.",
+          "specification": {
+            "Screen Size": "13.4 inches",
+            "Processor": "Intel Core i7",
+            "Storage": "512GB/1TB",
+            "RAM": "16GB",
+            "Battery Life": "12 hours"
+          },
+          "availability": true,
+          "rating": 4.6
+        },
+        {
+          "product_id": "35",
+          "product_title": "AirPods Pro 2nd Gen",
+          "product_image": "https://example.com/images/airpodspro2.jpg",
+          "category": "Accessories",
+          "price": 249,
+          "description": "Experience immersive sound with noise cancellation and spatial audio.",
+          "specification": {
+            "Battery Life": "6 hours per charge",
+            "Features": "Active Noise Cancellation, Spatial Audio, MagSafe Charging",
+            "Compatibility": "iOS & macOS"
+          },
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "36",
+          "product_title": "HP Spectre x360 Convertible",
+          "product_image": "https://example.com/images/hpspectrex360.jpg",
+          "category": "Laptop",
+          "price": 1399,
+          "description": "Convertible laptop for versatility and performance.",
+          "specification": {
+            "Screen Size": "13.5 inches",
+            "Processor": "Intel Core i7",
+            "Storage": "512GB",
+            "RAM": "16GB",
+            "Battery Life": "14 hours"
+          },
+          "availability": true,
+          "rating": 4.5
+        },
+        {
+          "product_id": "37",
+          "product_title": "Apple Watch Series 8",
+          "product_image": "https://example.com/images/applewatchseries8.jpg",
+          "category": "Smart Watch",
+          "price": 399,
+          "description": "A smartwatch designed for health, fitness, and connectivity.",
+          "specification": {
+            "Display": "1.9 inches Retina",
+            "Battery Life": "18 hours",
+            "Features": "ECG, Blood Oxygen Monitor, Sleep Tracking",
+            "Compatibility": "iOS"
+          },
+          "availability": true,
+          "rating": 4.8
+        },
+        {
+          "product_id": "38",
+          "product_title": "Lenovo ThinkPad X1 Carbon",
+          "product_image": "https://example.com/images/thinkpadx1carbon.jpg",
+          "category": "Laptop",
+          "price": 1799,
+          "description": "Business-class laptop with powerful performance and premium build quality.",
+          "specification": {
+            "Screen Size": "14 inches",
+            "Processor": "Intel Core i7",
+            "Storage": "1TB",
+            "RAM": "16GB",
+            "Battery Life": "15 hours"
+          },
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "39",
+          "product_title": "Sony WH-1000XM5",
+          "product_image": "https://example.com/images/sonywh1000xm5.jpg",
+          "category": "Accessories",
+          "price": 399,
+          "description": "Industry-leading noise-canceling headphones with superior sound quality.",
+          "specification": {
+            "Battery Life": "30 hours",
+            "Features": "Noise Cancellation, Touch Controls, Voice Assistant",
+            "Compatibility": "Bluetooth"
+          },
+          "availability": true,
+          "rating": 4.9
+        },
+        {
+          "product_id": "40",
+          "product_title": "Google Pixel 7 Pro",
+          "product_image": "https://example.com/images/pixel7pro.jpg",
+          "category": "Phones",
+          "price": 899,
+          "description": "The latest Pixel phone with advanced AI capabilities and top-notch camera performance.",
+          "specification": {
+            "Screen Size": "6.7 inches",
+            "Processor": "Google Tensor G2",
+            "Storage": "128GB/256GB/512GB",
+            "Camera": "50 MP Triple-lens system",
+            "Battery Life": "24 hours"
+          },
+          "availability": true,
+          "rating": 4.8
+        },
+        {
+          "product_id": "41",
+          "product_title": "Microsoft Surface Laptop 5",
+          "product_image": "https://example.com/images/surfacelaptop5.jpg",
+          "category": "Laptop",
+          "price": 1499,
+          "description": "Thin, lightweight laptop with high performance and 3:2 display ratio.",
+          "specification": {
+            "Screen Size": "13.5 inches",
+            "Processor": "Intel Core i5/i7",
+            "Storage": "256GB/512GB",
+            "RAM": "8GB/16GB",
+            "Battery Life": "11 hours"
+          },
+          "availability": true,
+          "rating": 4.6
+        },
+        {
+          "product_id": "42",
+          "product_title": "Acer Predator Helios 300",
+          "product_image": "https://example.com/images/acerpredatorhelios300.jpg",
+          "category": "Gaming Laptop",
+          "price": 1599,
+          "description": "High-performance gaming laptop with powerful GPU and cooling system.",
+          "specification": {
+            "Screen Size": "15.6 inches",
+            "Processor": "Intel Core i7",
+            "Storage": "512GB/1TB",
+            "RAM": "16GB",
+            "Battery Life": "6 hours"
+          },
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "43",
+          "product_title": "Sony Xperia 1 IV",
+          "product_image": "https://example.com/images/sonyxperia1iv.jpg",
+          "category": "Smartphone",
+          "price": 1199,
+          "description": "Flagship smartphone with 4K OLED display and professional-grade camera system.",
+          "specification": {
+            "Screen Size": "6.5 inches",
+            "Processor": "Snapdragon 8 Gen 1",
+            "Storage": "256GB/512GB",
+            "Camera": "12 MP Quad-lens system",
+            "Battery Life": "24 hours"
+          },
+          "availability": true,
+          "rating": 4.8
+        },
+        {
+          "product_id": "44",
+          "product_title": "PlayStation 5",
+          "product_image": "https://example.com/images/playstation5.jpg",
+          "category": "Gaming Console",
+          "price": 499,
+          "description": "Next-gen gaming console with lightning-fast load times and immersive gaming experiences.",
+          "specification": {
+            "Storage": "825GB SSD",
+            "Features": "4K Gaming, Ultra HD Blu-ray",
+            "Compatibility": "PS5 Games"
+          },
+          "availability": true,
+          "rating": 4.9
+        },
+        {
+          "product_id": "45",
+          "product_title": "Bose SoundLink Revolve+",
+          "product_image": "https://example.com/images/bosesoundlinkrevolve+.jpg",
+          "category": "Accessories",
+          "price": 299,
+          "description": "Portable Bluetooth speaker with 360-degree sound and deep bass.",
+          "specification": {
+            "Battery Life": "16 hours",
+            "Features": "Water-resistant, Voice Assistant",
+            "Compatibility": "Bluetooth"
+          },
+          "availability": true,
+          "rating": 4.8
+        },
+        {
+          "product_id": "46",
+          "product_title": "Xbox Series X",
+          "product_image": "https://example.com/images/xboxseriesx.jpg",
+          "category": "Gaming Console",
+          "price": 499,
+          "description": "The most powerful Xbox console with fast load times and stunning graphics.",
+          "specification": {
+            "Storage": "1TB SSD",
+            "Features": "4K Gaming, Ray Tracing",
+            "Compatibility": "Xbox Games"
+          },
+          "availability": true,
+          "rating": 4.9
+        },
+        {
+          "product_id": "47",
+          "product_title": "Nintendo Switch OLED Model",
+          "product_image": "https://example.com/images/nintendoswitcholed.jpg",
+          "category": "Gaming Console",
+          "price": 349,
+          "description": "Hybrid gaming console with a 7-inch OLED screen for superior visuals.",
+          "specification": {
+            "Storage": "64GB",
+            "Features": "Portable, 4K TV Dock",
+            "Compatibility": "Nintendo Games"
+          },
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "48",
+          "product_title": "Bose QuietComfort 45",
+          "product_image": "https://example.com/images/bosequietcomfort45.jpg",
+          "category": "Accessories",
+          "price": 329,
+          "description": "Noise-canceling headphones for superior comfort and sound quality.",
+          "specification": {
+            "Battery Life": "24 hours",
+            "Features": "Noise Cancellation, Touch Controls, Voice Assistant",
+            "Compatibility": "Bluetooth"
+          },
+          "availability": true,
+          "rating": 4.8
+        },
+        {
+          "product_id": "49",
+          "product_title": "Apple Mac mini M2",
+          "product_image": "https://example.com/images/macminim2.jpg",
+          "category": "Desktop",
+          "price": 699,
+          "description": "Compact desktop with Apple's M2 chip for blazing-fast performance.",
+          "specification": {
+            "Processor": "Apple M2",
+            "Storage": "256GB/512GB",
+            "RAM": "8GB/16GB",
+            "Battery Life": "N/A"
+          },
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "50",
+          "product_title": "LG UltraWide Monitor 34WN80C-B",
+          "product_image": "https://example.com/images/lgultrawide34.jpg",
+          "category": "Monitor",
+          "price": 499,
+          "description": "34-inch curved ultrawide monitor with IPS display for productivity and gaming.",
+          "specification": {
+            "Screen Size": "34 inches",
+            "Resolution": "2560x1080",
+            "Ports": "HDMI, DisplayPort",
+            "Features": "Curved, Adjustable Stand"
+          },
+          "availability": true,
+          "rating": 4.8
+        }
+      
+  ]
+  
