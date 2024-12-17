@@ -1,9 +1,10 @@
 import React from "react";
 import image from "../../assets/banner.jpg";
+import Gadgets from "../H&F/Pages/Gadgets";
 
 const Home = () => {
   return (
-    <section>
+    <section className="">
       <div className="bg-[#9538E2] text-white space-y-10 pb-[400px] rounded-b-2xl">
         <h1 className="text-5xl font-bold pt-5 leading-relaxed">
           Upgrade Your Tech Accessorize <br /> with Gadget Heaven Accessories
@@ -23,8 +24,13 @@ const Home = () => {
           <img className=" rounded-2xl bg-white-200" src={image} alt="" />
         </div>
       </div>
+      <div className="mt-96 m-24">
+
+        <h1 className="text-4xl font-bold mb-10">Explore Cutting-Edge Gadgets</h1>
+        <Gadgets></Gadgets>
+      </div>
       
-      <div className="mt-[300px]"></div>
+      <div className="mt-[100px]"></div>
     </section>
   );
 };
