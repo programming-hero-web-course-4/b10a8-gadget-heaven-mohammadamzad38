@@ -1,6 +1,9 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { FaRegStar } from "react-icons/fa";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa6";
+
+
 
 const GadgetsDetails = () => {
   const { product_id } = useParams();
@@ -24,7 +27,7 @@ const GadgetsDetails = () => {
           alt=""
         />
       </div>
-      <div className="space-y-3">
+      <div className="space-y-2">
         <h1 className="text-3xl font-bold">{product_title}</h1>
         <p className="font-bold">Price: {price}</p>
         <div className="text-center">
@@ -56,6 +59,11 @@ const GadgetsDetails = () => {
                 name="rating-4"
                 className="mask mask-star-2 bg-amber-700"
               />
+            </div>
+            <div className="flex gap-4">
+                <button className="flex text-xs items-center gap-2 btn rounded-3xl">Add To Card <MdOutlineShoppingCart /></button>
+                <button className="btn rounded-full bg-white"><FaRegHeart />
+                </button>
             </div>
       </div>
     </div>
