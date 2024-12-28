@@ -20,25 +20,60 @@ const Gadgets = () => {
   return (
     <div className="flex gap-10 ">
       <div className="flex flex-col gap-5 bg-white p-10 rounded-xl max-h-[600px]">
-        <button className="btn" onClick={() => setCategory("All")}>
-          All Product{" "}
+        <button
+          className={`${
+            category === "All" ? "btn text-white bg-[#9538e2]" : "btn"
+          }`}
+          onClick={() => setCategory("All")}
+        >
+          All Product
         </button>
-        <button className="btn" onClick={() => setCategory("Laptop")}>
+        <button
+          className={
+            category == "Laptop" ? "btn text-white bg-[#9538e2]" : "btn"
+          }
+          onClick={() => setCategory("Laptop")}
+        >
           Laptops
         </button>
-        <button className="btn" onClick={() => setCategory("Phones")}>
+        <button
+          className={
+            category === "Phones" ? "btn text-white bg-[#9538E2]" : "btn"
+          }
+          onClick={() => setCategory("Phones")}
+        >
           Phones
         </button>
-        <button className="btn" onClick={() => setCategory("Accessories")}>
+        <button
+          className={`${
+            category === "Accessories" ? "btn bg-[#9538E2] text-white" : "btn"
+          }`}
+          onClick={() => setCategory("Accessories")}
+        >
           Accessories
         </button>
-        <button className="btn" onClick={() => setCategory("Smart Watch")}>
+        <button
+          className={`${
+            category === "Smart Watch" ? "btn bg-[#9538E2] text-white" : "btn"
+          }`}
+          onClick={() => setCategory("Smart Watch")}
+        >
           Smart Watches
         </button>
-        <button className="btn" onClick={() => setCategory("MacBook")}>
+        <button
+          className={`${
+            category === "MacBook" ? "btn bg-[#9538E2] text-white" : "btn"
+          }`}
+          onClick={() => setCategory("MacBook")}
+        >
           MacBook
         </button>
-        <button className="btn" onClick={() => setCategory("iPhone")}>
+        <button
+          className={`${
+            category === "iPhone" ? "btn bg-[#9538E2] text-white" : "btn"
+          }`}
+          onClick={() => setCategory("iPhone")}
+        >
           Iphone
         </button>
       </div>
