@@ -6,7 +6,7 @@ const Gadget = ({ gadget }) => {
   return (
     <div className="flex flex-col items-center p-4 rounded-xl bg-white">
       <img
-        class="w-82 h-60 object-cover p-4 rounded-3xl"
+        className="w-82 h-60 object-cover p-4 rounded-3xl"
         src={product_image}
       />
       <div className="text-start space-y-3">

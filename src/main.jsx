@@ -9,6 +9,9 @@ import Error from "./Components/H&F/Error.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Dashboard from "./Components/H&F/Pages/Dashboard.jsx";
 import Statistics from "./Components/H&F/Pages/Statistics.jsx";
+
+import Gadgets from "./Components/H&F/Pages/Gadgets.jsx";
+// import GadgetDetails from "./Components/H&F/Pages/GadgetDetails.jsx";
 import GadgetsDetails from "./Components/H&F/Pages/GadgetsDetails.jsx";
 
 const router = createBrowserRouter([
@@ -21,10 +24,15 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      // {
+      //   path: '/gadgets/:category',
+      //   element: <Gadgets></Gadgets>,
+      //   loader: () => fetch('./../public/GadgetsData.json')
+      // },
       {
         path: "/gadgets/:product_id",
         element: <GadgetsDetails></GadgetsDetails>,
-        loader: () => fetch("../public/GadgetsData.json"),
+        loader: () => fetch('/public/GadgetsData.json')
       },
       {
         path: "/dashboard",
