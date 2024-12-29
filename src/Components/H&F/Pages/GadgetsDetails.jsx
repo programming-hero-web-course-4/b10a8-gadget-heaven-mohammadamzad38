@@ -2,7 +2,9 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
-import { key } from "localforage";
+import { stopDuplicateCart } from "../localstore";
+
+
 
 const GadgetsDetails = () => {
   const { product_id } = useParams();
@@ -19,7 +21,13 @@ const GadgetsDetails = () => {
   } = gadget;
 
   const customArray = Object.entries(specification).map(([key, value]) => ({key,value}));
-  console.log('arrrrrrrrrrrr',customArray)
+  const handleAddTocart = (product_id) =>{
+    stopDuplicateCart(product_id)
+  }
+
+  const handleaddToWishList = () => {
+    console.log('Wishlist Added')
+  }
   return (
     <section>
       <div className="bg-[#9538E2] pt-10 pb-[250px] space-y-4 text-white">
@@ -76,10 +84,10 @@ const GadgetsDetails = () => {
               />
             </div>
             <div className="flex gap-4">
-              <button className="flex text-xs items-center gap-2 btn rounded-3xl">
+              <button onClick={() => handleAddTocart(product_id)} className="flex text-xs items-center gap-2 btn rounded-3xl">
                 Add To Card <MdOutlineShoppingCart />
               </button>
-              <button className="btn rounded-full bg-white">
+              <button onClick={() => handleaddToWishList()} className="btn rounded-full bg-white">
                 <FaRegHeart />
               </button>
             </div>
