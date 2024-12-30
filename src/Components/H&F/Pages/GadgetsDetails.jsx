@@ -2,7 +2,7 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
-import { stopDuplicateCart } from "../localstore";
+import { stopDuplicateCart, stopDuplicateWishList } from "../localstore";
 
 
 
@@ -25,8 +25,8 @@ const GadgetsDetails = () => {
     stopDuplicateCart(product_id)
   }
 
-  const handleaddToWishList = () => {
-    console.log('Wishlist Added')
+  const handleaddToWishList = (product_id) => {
+    stopDuplicateWishList(product_id)
   }
   return (
     <section>
@@ -87,7 +87,7 @@ const GadgetsDetails = () => {
               <button onClick={() => handleAddTocart(product_id)} className="flex text-xs items-center gap-2 btn rounded-3xl">
                 Add To Card <MdOutlineShoppingCart />
               </button>
-              <button onClick={() => handleaddToWishList()} className="btn rounded-full bg-white">
+              <button onClick={() => handleaddToWishList(product_id)} className="btn rounded-full bg-white">
                 <FaRegHeart />
               </button>
             </div>

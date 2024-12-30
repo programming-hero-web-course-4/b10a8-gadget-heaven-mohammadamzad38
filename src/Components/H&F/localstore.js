@@ -24,5 +24,29 @@ const stopDuplicateCart = (product_id) =>{
     }
 }
 
+const getStoreWishList = () =>{
+    const storedWishListSrrng = localStorage.getItem("addToWish")
 
-export {getStoreCartList , stopDuplicateCart}
+    if(storedWishListSrrng){
+        const wishList = JSON.parse(storedWishListSrrng);
+        return wishList;
+    }
+    else{
+        return [];
+    }
+}
+
+const stopDuplicateWishList = (product_id) =>{
+    const storedWish = getStoreWishList();
+
+    if(storedWish.includes(product_id)){
+        toast ("Already Added (Wish-List)! ")
+    }
+    else{
+        storedWish.push(product_id);
+        const storedWishStrng = JSON.stringify(storedWish);
+        localStorage.setItem('addToWish', storedWishStrng)
+        toast ('Wish List added')
+    }
+}
+export {getStoreCartList , stopDuplicateCart, getStoreWishList, stopDuplicateWishList}

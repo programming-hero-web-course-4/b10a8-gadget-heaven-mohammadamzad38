@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { getStoreCartList } from "../localstore";
+import { getStoreCartList, getStoreWishList } from "../localstore";
 import { FaSort } from "react-icons/fa";
 
 const Dashboard = () => {
-
   const [cartlist, setCartList] = useState([]);
+  const [wishList, setWishList] = useState([]);
   const allGadgets = useLoaderData();
 
   useEffect(() => {
@@ -18,12 +18,22 @@ const Dashboard = () => {
     setCartList(gadgetCart);
   }, []);
 
-  const handleSort = () =>{
-    const sortedList = [...cartlist].sort((a, b) => a.price - b.price)
-    setCartList(sortedList)
-  }
+  console.log('hhhhhhhhhhhhhhhhll', cartlist)
+  useEffect(() => {
+    const storedWish = getStoreWishList();
+    const wishCart = allGadgets.filter((wishGadget) =>
+      storedWish.includes(wishGadget.product_id)
+    );
+    setWishList(wishCart);
+  }, []);
 
-  const totalPrice = cartlist.reduce((sum, item) => sum + item.price, 0)
+  console.log('lllll', wishList)
+  const handleSort = () => {
+    const sortedList = [...cartlist].sort((a, b) => a.price - b.price);
+    setCartList(sortedList);
+  };
+
+  const totalPrice = cartlist.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <div className="bg-[#9538E2] text-white">
@@ -36,20 +46,21 @@ const Dashboard = () => {
 
       <Tabs>
         <TabList className="flex gap-4 justify-center pb-3 items-center">
-          <Tab className="font-bold py-2 px-6">Cart</Tab>
-          <Tab className="font-bold py-2 px-6">Wishlist</Tab>
+          <Tab className="font-bold py-2 px-6 border rounded-lg">Cart</Tab>
+          <Tab className="font-bold py-2 px-6 border rounded-lg">Wishlist</Tab>
         </TabList>
 
         <TabPanel className="bg-white">
-          <div className="bg-gray-100 pt-10 ">
+          <div className="bg-gray-100 py-10 ">
             <div className="text-black mx-32 items-center flex justify-between">
               <p className="text-xl font-bold ">Cart</p>
               <div className="flex items-center gap-6">
-                <p className="text-xl font-bold">
-                  Total Cost: {totalPrice}
-                </p>
+                <p className="text-xl font-bold">Total Cost: {totalPrice}</p>
                 <Link className="">
-                  <button onClick={handleSort} className="btn border-[#9538E2] flex items-center gap-2">
+                  <button
+                    onClick={handleSort}
+                    className="btn border-[#9538E2] flex items-center gap-2"
+                  >
                     <span>Sort by Price </span>
                     <FaSort />
                   </button>
@@ -80,8 +91,28 @@ const Dashboard = () => {
           ))}
         </TabPanel>
 
-        <TabPanel className="bg-white ">
-          <h2 className="text-2xl text-black">Product added in wishlisted</h2>
+
+
+
+        <TabPanel className="bg-gray-100 ">
+          <h2 className="text-2xl mx-32 text-black text-start font-bold py-10">WishList</h2>
+       <section className=" flex flex-col gap-10 rounded-lg">
+       <div className="flex flex-col gap-10 pb-16">
+       {
+            wishList.map((wish) => <div className="text-black bg-white mx-32 p-8 rounded-xl flex gap-10">
+              <div className="flex items-center gap-10">
+                <img className="object-cover w-52 rounded-2xl" src={wish.product_image} alt="" />
+                <div className="text-start space-y-3">
+                  <p className="text-xl font-bold">{wish.product_title}</p>
+                  <p>{wish.description}</p>
+                  <p className="font-bold">Price: {wish.price}</p>
+                </div>
+              </div>
+            </div>)
+          }
+       </div>
+       </section>
+
         </TabPanel>
       </Tabs>
     </div>
