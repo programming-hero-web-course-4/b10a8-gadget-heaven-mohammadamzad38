@@ -53,7 +53,7 @@ const Dashboard = () => {
         <TabPanel className="bg-white">
           <div className="bg-gray-100 py-10 ">
             <div className="text-black mx-32 items-center flex justify-between">
-              <p className="text-xl font-bold ">Cart</p>
+              <p className="text-2xl font-bold ">Cart</p>
               <div className="flex items-center gap-6">
                 <p className="text-xl font-bold">Total Cost: {totalPrice}</p>
                 <Link className="">

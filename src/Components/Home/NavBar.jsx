@@ -22,7 +22,7 @@ const NavBar = () => {
     },[localStorage])
     return (
         <div className={`flex items-center gap-80 sticky justify-between px-32 p-5 rounded-t-3xl ${homeColor}`}>
-            <Link className='' ><button >My Gadget Haven</button></Link>
+            <Link className='text-2xl font-bold' ><button >My Gadget Haven</button></Link>
             <ul className='space-x-10 font-bold '>
                 <NavLink className={({isActive}) => isActive ? "bg-gray-300 px-3 py-2 text-black rounded-lg" : "/"} to='/'>Home</NavLink>
                 <NavLink className={({isActive}) => isActive ? "bg-gray-300 px-3 py-2 rounded-lg" : "/statistic"} to='/statistic'>Statistics</NavLink>

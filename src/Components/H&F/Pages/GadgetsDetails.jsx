@@ -1,8 +1,10 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
 import { stopDuplicateCart, stopDuplicateWishList } from "../localstore";
+import { TiDeleteOutline } from "react-icons/ti";
+
 
 
 
@@ -28,6 +30,10 @@ const GadgetsDetails = () => {
   const handleaddToWishList = (product_id) => {
     stopDuplicateWishList(product_id)
   }
+  const navigate = useNavigate();
+  const navigatehome = () =>{
+    navigate('/')
+  }
   return (
     <section>
       <div className="bg-[#9538E2] pt-10 pb-[250px] space-y-4 text-white">
@@ -39,7 +45,10 @@ const GadgetsDetails = () => {
         </p>
       </div>
       <div className="flex justify-center mb-64">
-        <div className="flex justify-start gap-12 text-start items-start bg-white -m-[170px] p-10 rounded-3xl ">
+        
+        <div className="flex relative justify-start gap-12 text-start items-start bg-white -m-[170px] p-10 rounded-3xl ">
+        <Link onClick={navigatehome}><button className="absolute top-5 right-5 text-red-400 text-3xl"><TiDeleteOutline /></button>
+        </Link>
           <div>
             <img
               className="w-[500px] object-cover rounded-2xl"
