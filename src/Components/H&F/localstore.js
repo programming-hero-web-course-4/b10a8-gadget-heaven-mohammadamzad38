@@ -38,7 +38,7 @@ const getStoreWishList = () =>{
 
 const stopDuplicateWishList = (product_id) =>{
     const storedWish = getStoreWishList();
-
+console.log('hhhhhhhhhhh',storedWish)
     if(storedWish.includes(product_id)){
         toast ("Already Added (Wish-List)! ")
     }

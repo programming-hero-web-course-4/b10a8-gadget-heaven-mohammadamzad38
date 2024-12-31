@@ -37,8 +37,8 @@ const Dashboard = () => {
 
   return (
     <div className="bg-[#9538E2] text-white">
-      <h1 className="text-2xl font-bold pb-3 pt-10">Dashboard</h1>
-      <p className="pb-6">
+      <h1 className="text-2xl font-bold text-center pb-3 pt-10">Dashboard</h1>
+      <p className="pb-6 text-center">
         Explore the latest gadgets that will take your experience to <br /> the
         next level. From smart devices to the coolest accessories, we have it
         all!
@@ -52,9 +52,9 @@ const Dashboard = () => {
 
         <TabPanel className="bg-white">
           <div className="bg-gray-100 py-10 ">
-            <div className="text-black mx-32 items-center flex justify-between">
+            <div className="text-black mx-96 items-center flex justify-between">
               <p className="text-2xl font-bold ">Cart</p>
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-12">
                 <p className="text-xl font-bold">Total Cost: {totalPrice}</p>
                 <Link className="">
                   <button
@@ -66,14 +66,14 @@ const Dashboard = () => {
                   </button>
                 </Link>
                 <Link>
-                  <button className="btn rounded-xl"> Purchase</button>
+                  <button className="btn hover:bg-[#9538E2] rounded-xl"> Purchase</button>
                 </Link>
               </div>
             </div>
           </div>
           {cartlist.map((gadget) => (
             <section className="bg-gray-100 p-6">
-              <div className="text-black flex gap-10 text-start items-center mx-32 bg-white p-8 rounded-xl ">
+              <div className="text-black flex gap-10 text-start items-center mx-96 bg-white p-8 rounded-xl ">
                 <img
                   className="object-cover w-52 rounded-2xl"
                   src={gadget.product_image}
@@ -95,11 +95,11 @@ const Dashboard = () => {
 
 
         <TabPanel className="bg-gray-100 ">
-          <h2 className="text-2xl mx-32 text-black text-start font-bold py-10">WishList</h2>
+          <h2 className="text-2xl mx-96 text-black text-start font-bold py-10">WishList</h2>
        <section className=" flex flex-col gap-10 rounded-lg">
        <div className="flex flex-col gap-10 pb-16">
        {
-            wishList.map((wish) => <div className="text-black bg-white mx-32 p-8 rounded-xl flex gap-10">
+            wishList.map((wish) => <div className="text-black bg-white mx-96 p-8 rounded-xl flex gap-10">
               <div className="flex items-center gap-10">
                 <img className="object-cover w-52 rounded-2xl" src={wish.product_image} alt="" />
                 <div className="text-start space-y-3">

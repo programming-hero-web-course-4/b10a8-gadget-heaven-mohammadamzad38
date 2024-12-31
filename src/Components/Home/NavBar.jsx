@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { TiShoppingCart } from "react-icons/ti";
 import { CiHeart } from "react-icons/ci";
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { getStoreCartList, getStoreWishList } from '../H&F/localstore';
 
 

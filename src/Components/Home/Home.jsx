@@ -5,7 +5,7 @@ import Gadgets from "../H&F/Pages/Gadgets";
 const Home = () => {
   return (
     <section className="">
-      <div className="bg-[#9538E2] text-white space-y-10 pb-[400px] rounded-b-2xl">
+      <div className="bg-[#9538E2] text-center text-white space-y-10 pb-[400px] rounded-b-2xl">
         <h1 className="text-5xl font-bold pt-5 leading-relaxed">
           Upgrade Your Tech Accessorize <br /> with Gadget Heaven Accessories
         </h1>
@@ -24,7 +24,7 @@ const Home = () => {
           <img className=" rounded-2xl bg-white-200" src={image} alt="" />
         </div>
       </div>
-      <div className="mt-96 m-24">
+      <div className="mt-96 m-24 text-center flex flex-col justify-center items-center">
 
         <h1 className="text-4xl font-bold mb-10">Explore Cutting-Edge Gadgets</h1>
         <Gadgets></Gadgets>
