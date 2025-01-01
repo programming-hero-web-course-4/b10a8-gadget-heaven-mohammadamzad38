@@ -4,7 +4,7 @@ import Gadgets from "../H&F/Pages/Gadgets";
 
 const Home = () => {
   return (
-    <section className="">
+    <section className="mx-16">
       <div className="bg-[#9538E2] text-center text-white space-y-10 pb-[400px] rounded-b-2xl">
         <h1 className="text-5xl font-bold pt-5 leading-relaxed">
           Upgrade Your Tech Accessorize <br /> with Gadget Heaven Accessories
